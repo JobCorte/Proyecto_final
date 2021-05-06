@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Proyecto_final.Entidades
 {
@@ -32,7 +27,7 @@ namespace Proyecto_final.Entidades
         public string email { get; set; }
         [StringLength(300)]
         public string Photo { get; set; }
-        public string Fullname { get; }
+        public string Fullname { get { return $"{FirstName} {LastName}"; } }
         #endregion
 
 

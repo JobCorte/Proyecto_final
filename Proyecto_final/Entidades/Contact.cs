@@ -1,12 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Proyecto_final.Entidades
 {
-    class Contact
+    public class Contact
     {
+        #region Propiedades Auto Impplementadas
+        [Key]
+        public int IdContact { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string FirstNameContact { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string LastNameContact { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string PhoneNumberContact { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string CellPhoneContact { get; set; }
+        [Required]
+        [StringLength(300)]
+        public string PhotoContact { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string EmailContact { get; set; }
+        [StringLength(30)]
+        public string DepartmentContact { get; set; }
+        public string FullnameContact { get { return $"{FirstNameContact} {LastNameContact}"; } }
+        #endregion
     }
 }
