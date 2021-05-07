@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto_final
 {
-    public partial class FrmCoordinator : Form
+    public partial class FrmCoordinator : MetroFramework.Forms.MetroForm
     {
         public FrmCoordinator()
         {
             InitializeComponent();
+        }
+
+        private void FrmCoordinator_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
