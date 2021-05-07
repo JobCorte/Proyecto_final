@@ -18,7 +18,7 @@ namespace Proyecto_final.Entidades
         public string PhoneNumberContact { get; set; }
         [Required]
         [StringLength(30)]
-        public string CellPhoneContact { get; set; }
+        public string CellphoneContact { get; set; }
         [Required]
         [StringLength(300)]
         public string PhotoContact { get; set; }
