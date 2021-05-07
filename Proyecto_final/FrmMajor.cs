@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto_final
 {
-    public partial class FrmMajor : Form
+    public partial class FrmMajor : MetroFramework.Forms.MetroForm
     {
         public FrmMajor()
         {
             InitializeComponent();
+        }
+
+        private void FrmMajor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

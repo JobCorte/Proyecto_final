@@ -125,6 +125,7 @@
     <Compile Include="FrmStudent.Designer.cs">
       <DependentUpon>FrmStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="MetroFremwork\Forms.cs" />
     <Compile Include="Migrations\202105060228279_Inicio.cs" />
     <Compile Include="Migrations\202105060228279_Inicio.designer.cs">
       <DependentUpon>202105060228279_Inicio.cs</DependentUpon>
@@ -132,11 +133,17 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdviser.resx">
+      <DependentUpon>FrmAdviser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCompany.resx">
       <DependentUpon>FrmCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmContact.resx">
       <DependentUpon>FrmContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMajor.resx">
+      <DependentUpon>FrmMajor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStudent.resx">
       <DependentUpon>FrmStudent.cs</DependentUpon>
