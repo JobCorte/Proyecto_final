@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_final.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,22 @@ namespace Proyecto_final
         }
 
         private void FrmMajor_Load(object sender, EventArgs e)
+        {
+            using (DataContext dataContext = new DataContext())
+
+            {
+                majorBindingSource.DataSource = dataContext.Major.ToList();
+            }
+
+            pnlDatos.Enabled = false;
+            Major major = majorBindingSource.Current as Major;
+            if (major != null && Major.Photo != null)
+                pctPhoto.Image = Image.FromFile(Major.Photo);
+            else
+                pctPhoto.Image = null;
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
         {
 
         }

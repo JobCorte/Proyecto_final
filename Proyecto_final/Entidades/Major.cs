@@ -20,8 +20,7 @@ namespace Proyecto_final.Entidades
         public string PhoneNumberMajor { get; set; }
         [Required]
         [StringLength(30)]
-        public string CellphoneNumberMajor { get; set; }
-        [Required]
+        public string CellPhoneNumberMajor { get; set; }
         [StringLength(300)]
         public string PhotoMajor { get; set; }
         [Required]

@@ -166,6 +166,8 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Company.datasource" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Contact.datasource" />
+    <None Include="Properties\DataSources\Proyecto_final.Entidades.Coordinator.datasource" />
+    <None Include="Properties\DataSources\Proyecto_final.Entidades.Major.datasource" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Student.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

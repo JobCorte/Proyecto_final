@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Proyecto_final.Entidades
 {
@@ -28,6 +29,11 @@ namespace Proyecto_final.Entidades
         [StringLength(300)]
         public string Photo { get; set; }
         public string Fullname { get { return $"{FirstName} {LastName}"; } }
+
+        public static implicit operator Student(Coordinator v)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
 

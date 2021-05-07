@@ -20,7 +20,7 @@ namespace Proyecto_final.Entidades
         [StringLength(300)]
         public string PhotoCoordinator { get; set; }
         [StringLength(30)]
-        public string DescriptionMajor { get; set; }
+        public string DescriptionCoordinator { get; set; }
         #endregion
     }
 }
