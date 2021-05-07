@@ -63,7 +63,7 @@ namespace Proyecto_final
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (MetroFramework.MetroMessageBox.Show(this, "¿Quieres eliminar a lacompañia?") == DialogResult.OK)
+            if (MetroFramework.MetroMessageBox.Show(this, "¿Quieres eliminar a la compañia?") == DialogResult.OK)
             {
                 using (DataContext dataContext = new DataContext())
                 {

@@ -138,6 +138,9 @@
     <EmbeddedResource Include="FrmContact.resx">
       <DependentUpon>FrmContact.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudent.resx">
+      <DependentUpon>FrmStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105060228279_Inicio.resx">
       <DependentUpon>202105060228279_Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +156,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Company.datasource" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Contact.datasource" />
+    <None Include="Properties\DataSources\Proyecto_final.Entidades.Student.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
