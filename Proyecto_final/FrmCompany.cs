@@ -116,5 +116,10 @@ namespace Proyecto_final
                     company.PhotoCompany = ofd.FileName;
             }
         }
+
+        private void pctPhotoCompany_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
