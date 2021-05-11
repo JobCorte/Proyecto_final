@@ -30,10 +30,18 @@ namespace Proyecto_final
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatosCompany = new MetroFramework.Controls.MetroGrid();
+            this.idCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adressCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.postalCodeCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.webSiteCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.photoCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDatosCompany = new MetroFramework.Controls.MetroPanel();
             this.btnSearch = new MetroFramework.Controls.MetroButton();
@@ -57,14 +65,6 @@ namespace Proyecto_final
             this.btnDelete = new MetroFramework.Controls.MetroButton();
             this.btnCancel = new MetroFramework.Controls.MetroButton();
             this.btnSave = new MetroFramework.Controls.MetroButton();
-            this.idCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adressCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.postalCodeCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.webSiteCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photoCompanyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosCompany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
             this.pnlDatosCompany.SuspendLayout();
@@ -79,14 +79,14 @@ namespace Proyecto_final
             this.grdDatosCompany.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdDatosCompany.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdDatosCompany.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatosCompany.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatosCompany.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdDatosCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDatosCompany.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idCompanyDataGridViewTextBoxColumn,
@@ -98,33 +98,81 @@ namespace Proyecto_final
             this.emailCompanyDataGridViewTextBoxColumn,
             this.photoCompanyDataGridViewTextBoxColumn});
             this.grdDatosCompany.DataSource = this.companyBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdDatosCompany.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdDatosCompany.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdDatosCompany.EnableHeadersVisualStyles = false;
             this.grdDatosCompany.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatosCompany.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdDatosCompany.Location = new System.Drawing.Point(23, 63);
             this.grdDatosCompany.Name = "grdDatosCompany";
             this.grdDatosCompany.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatosCompany.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatosCompany.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdDatosCompany.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatosCompany.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDatosCompany.Size = new System.Drawing.Size(362, 282);
             this.grdDatosCompany.TabIndex = 0;
             this.grdDatosCompany.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosCompany_CellContentClick);
+            // 
+            // idCompanyDataGridViewTextBoxColumn
+            // 
+            this.idCompanyDataGridViewTextBoxColumn.DataPropertyName = "IdCompany";
+            this.idCompanyDataGridViewTextBoxColumn.HeaderText = "IdCompany";
+            this.idCompanyDataGridViewTextBoxColumn.Name = "idCompanyDataGridViewTextBoxColumn";
+            // 
+            // nameCompanyDataGridViewTextBoxColumn
+            // 
+            this.nameCompanyDataGridViewTextBoxColumn.DataPropertyName = "NameCompany";
+            this.nameCompanyDataGridViewTextBoxColumn.HeaderText = "NameCompany";
+            this.nameCompanyDataGridViewTextBoxColumn.Name = "nameCompanyDataGridViewTextBoxColumn";
+            // 
+            // adressCompanyDataGridViewTextBoxColumn
+            // 
+            this.adressCompanyDataGridViewTextBoxColumn.DataPropertyName = "AdressCompany";
+            this.adressCompanyDataGridViewTextBoxColumn.HeaderText = "AdressCompany";
+            this.adressCompanyDataGridViewTextBoxColumn.Name = "adressCompanyDataGridViewTextBoxColumn";
+            // 
+            // postalCodeCompanyDataGridViewTextBoxColumn
+            // 
+            this.postalCodeCompanyDataGridViewTextBoxColumn.DataPropertyName = "PostalCodeCompany";
+            this.postalCodeCompanyDataGridViewTextBoxColumn.HeaderText = "PostalCodeCompany";
+            this.postalCodeCompanyDataGridViewTextBoxColumn.Name = "postalCodeCompanyDataGridViewTextBoxColumn";
+            // 
+            // phoneNumberCompanyDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberCompanyDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumberCompany";
+            this.phoneNumberCompanyDataGridViewTextBoxColumn.HeaderText = "PhoneNumberCompany";
+            this.phoneNumberCompanyDataGridViewTextBoxColumn.Name = "phoneNumberCompanyDataGridViewTextBoxColumn";
+            // 
+            // webSiteCompanyDataGridViewTextBoxColumn
+            // 
+            this.webSiteCompanyDataGridViewTextBoxColumn.DataPropertyName = "WebSiteCompany";
+            this.webSiteCompanyDataGridViewTextBoxColumn.HeaderText = "WebSiteCompany";
+            this.webSiteCompanyDataGridViewTextBoxColumn.Name = "webSiteCompanyDataGridViewTextBoxColumn";
+            // 
+            // emailCompanyDataGridViewTextBoxColumn
+            // 
+            this.emailCompanyDataGridViewTextBoxColumn.DataPropertyName = "EmailCompany";
+            this.emailCompanyDataGridViewTextBoxColumn.HeaderText = "EmailCompany";
+            this.emailCompanyDataGridViewTextBoxColumn.Name = "emailCompanyDataGridViewTextBoxColumn";
+            // 
+            // photoCompanyDataGridViewTextBoxColumn
+            // 
+            this.photoCompanyDataGridViewTextBoxColumn.DataPropertyName = "PhotoCompany";
+            this.photoCompanyDataGridViewTextBoxColumn.HeaderText = "PhotoCompany";
+            this.photoCompanyDataGridViewTextBoxColumn.Name = "photoCompanyDataGridViewTextBoxColumn";
             // 
             // companyBindingSource
             // 
@@ -449,6 +497,7 @@ namespace Proyecto_final
             this.pctPhotoCompany.Size = new System.Drawing.Size(101, 133);
             this.pctPhotoCompany.TabIndex = 2;
             this.pctPhotoCompany.TabStop = false;
+            this.pctPhotoCompany.Click += new System.EventHandler(this.pctPhotoCompany_Click);
             // 
             // btnAdd
             // 
@@ -499,54 +548,6 @@ namespace Proyecto_final
             this.btnSave.Text = "Save";
             this.btnSave.UseSelectable = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // idCompanyDataGridViewTextBoxColumn
-            // 
-            this.idCompanyDataGridViewTextBoxColumn.DataPropertyName = "IdCompany";
-            this.idCompanyDataGridViewTextBoxColumn.HeaderText = "IdCompany";
-            this.idCompanyDataGridViewTextBoxColumn.Name = "idCompanyDataGridViewTextBoxColumn";
-            // 
-            // nameCompanyDataGridViewTextBoxColumn
-            // 
-            this.nameCompanyDataGridViewTextBoxColumn.DataPropertyName = "NameCompany";
-            this.nameCompanyDataGridViewTextBoxColumn.HeaderText = "NameCompany";
-            this.nameCompanyDataGridViewTextBoxColumn.Name = "nameCompanyDataGridViewTextBoxColumn";
-            // 
-            // adressCompanyDataGridViewTextBoxColumn
-            // 
-            this.adressCompanyDataGridViewTextBoxColumn.DataPropertyName = "AdressCompany";
-            this.adressCompanyDataGridViewTextBoxColumn.HeaderText = "AdressCompany";
-            this.adressCompanyDataGridViewTextBoxColumn.Name = "adressCompanyDataGridViewTextBoxColumn";
-            // 
-            // postalCodeCompanyDataGridViewTextBoxColumn
-            // 
-            this.postalCodeCompanyDataGridViewTextBoxColumn.DataPropertyName = "PostalCodeCompany";
-            this.postalCodeCompanyDataGridViewTextBoxColumn.HeaderText = "PostalCodeCompany";
-            this.postalCodeCompanyDataGridViewTextBoxColumn.Name = "postalCodeCompanyDataGridViewTextBoxColumn";
-            // 
-            // phoneNumberCompanyDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberCompanyDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumberCompany";
-            this.phoneNumberCompanyDataGridViewTextBoxColumn.HeaderText = "PhoneNumberCompany";
-            this.phoneNumberCompanyDataGridViewTextBoxColumn.Name = "phoneNumberCompanyDataGridViewTextBoxColumn";
-            // 
-            // webSiteCompanyDataGridViewTextBoxColumn
-            // 
-            this.webSiteCompanyDataGridViewTextBoxColumn.DataPropertyName = "WebSiteCompany";
-            this.webSiteCompanyDataGridViewTextBoxColumn.HeaderText = "WebSiteCompany";
-            this.webSiteCompanyDataGridViewTextBoxColumn.Name = "webSiteCompanyDataGridViewTextBoxColumn";
-            // 
-            // emailCompanyDataGridViewTextBoxColumn
-            // 
-            this.emailCompanyDataGridViewTextBoxColumn.DataPropertyName = "EmailCompany";
-            this.emailCompanyDataGridViewTextBoxColumn.HeaderText = "EmailCompany";
-            this.emailCompanyDataGridViewTextBoxColumn.Name = "emailCompanyDataGridViewTextBoxColumn";
-            // 
-            // photoCompanyDataGridViewTextBoxColumn
-            // 
-            this.photoCompanyDataGridViewTextBoxColumn.DataPropertyName = "PhotoCompany";
-            this.photoCompanyDataGridViewTextBoxColumn.HeaderText = "PhotoCompany";
-            this.photoCompanyDataGridViewTextBoxColumn.Name = "photoCompanyDataGridViewTextBoxColumn";
             // 
             // FrmCompany
             // 

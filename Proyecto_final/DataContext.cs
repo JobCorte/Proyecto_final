@@ -16,9 +16,9 @@ namespace Proyecto_final
         {
         }
 
-        internal object Entry<T>(object coordinator)
+       // internal object Entry<T>(object coordinator)
         {
             throw new NotImplementedException();
-        }
+        }//
     }
 }
