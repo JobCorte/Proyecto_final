@@ -33,7 +33,7 @@ namespace Proyecto_final
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.grdDatos = new MetroFramework.Controls.MetroGrid();
+            this.grdDatosCoordinator = new MetroFramework.Controls.MetroGrid();
             this.idCoordinatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameCoordinatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameCoordinatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +47,7 @@ namespace Proyecto_final
             this.btnDelete = new MetroFramework.Controls.MetroButton();
             this.btnEdit = new MetroFramework.Controls.MetroButton();
             this.btnAdd = new MetroFramework.Controls.MetroButton();
-            this.pnlDatos = new MetroFramework.Controls.MetroPanel();
+            this.pnlDatosCoordinator = new MetroFramework.Controls.MetroPanel();
             this.txtDescripcionCoordinator = new MetroFramework.Controls.MetroTextBox();
             this.lblDescripcionCoordinator = new MetroFramework.Controls.MetroLabel();
             this.btnSearch = new MetroFramework.Controls.MetroButton();
@@ -62,20 +62,20 @@ namespace Proyecto_final
             this.txtId = new MetroFramework.Controls.MetroTextBox();
             this.lblId = new MetroFramework.Controls.MetroLabel();
             this.pctPhotoCoordinator = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosCoordinator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coordinatorBindingSource)).BeginInit();
-            this.pnlDatos.SuspendLayout();
+            this.pnlDatosCoordinator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctPhotoCoordinator)).BeginInit();
             this.SuspendLayout();
             // 
-            // grdDatos
+            // grdDatosCoordinator
             // 
-            this.grdDatos.AllowUserToResizeRows = false;
-            this.grdDatos.AutoGenerateColumns = false;
-            this.grdDatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grdDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.grdDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grdDatosCoordinator.AllowUserToResizeRows = false;
+            this.grdDatosCoordinator.AutoGenerateColumns = false;
+            this.grdDatosCoordinator.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grdDatosCoordinator.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grdDatosCoordinator.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.grdDatosCoordinator.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -83,9 +83,9 @@ namespace Proyecto_final
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.grdDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdDatosCoordinator.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.grdDatosCoordinator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDatosCoordinator.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idCoordinatorDataGridViewTextBoxColumn,
             this.firstNameCoordinatorDataGridViewTextBoxColumn,
             this.lastNameCoordinatorDataGridViewTextBoxColumn,
@@ -93,7 +93,7 @@ namespace Proyecto_final
             this.emailCoordinatorDataGridViewTextBoxColumn,
             this.photoCoordinatorDataGridViewTextBoxColumn,
             this.descriptionCoordinatorDataGridViewTextBoxColumn});
-            this.grdDatos.DataSource = this.coordinatorBindingSource;
+            this.grdDatosCoordinator.DataSource = this.coordinatorBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -101,13 +101,13 @@ namespace Proyecto_final
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle5;
-            this.grdDatos.EnableHeadersVisualStyles = false;
-            this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdDatos.Location = new System.Drawing.Point(16, 63);
-            this.grdDatos.Name = "grdDatos";
-            this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grdDatosCoordinator.DefaultCellStyle = dataGridViewCellStyle5;
+            this.grdDatosCoordinator.EnableHeadersVisualStyles = false;
+            this.grdDatosCoordinator.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.grdDatosCoordinator.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grdDatosCoordinator.Location = new System.Drawing.Point(16, 63);
+            this.grdDatosCoordinator.Name = "grdDatosCoordinator";
+            this.grdDatosCoordinator.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -115,12 +115,12 @@ namespace Proyecto_final
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(455, 259);
-            this.grdDatos.TabIndex = 10;
-            this.grdDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatos_CellContentClick);
+            this.grdDatosCoordinator.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.grdDatosCoordinator.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.grdDatosCoordinator.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdDatosCoordinator.Size = new System.Drawing.Size(455, 259);
+            this.grdDatosCoordinator.TabIndex = 10;
+            this.grdDatosCoordinator.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosCoordinator_CellContentClick);
             // 
             // idCoordinatorDataGridViewTextBoxColumn
             // 
@@ -218,32 +218,32 @@ namespace Proyecto_final
             this.btnAdd.UseSelectable = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // pnlDatos
+            // pnlDatosCoordinator
             // 
-            this.pnlDatos.Controls.Add(this.txtDescripcionCoordinator);
-            this.pnlDatos.Controls.Add(this.lblDescripcionCoordinator);
-            this.pnlDatos.Controls.Add(this.btnSearch);
-            this.pnlDatos.Controls.Add(this.txtEmailCoordinator);
-            this.pnlDatos.Controls.Add(this.metroLabel5);
-            this.pnlDatos.Controls.Add(this.txtCellPhoneNumberCoordinator);
-            this.pnlDatos.Controls.Add(this.metroLabel4);
-            this.pnlDatos.Controls.Add(this.txtLastNameCoordinator);
-            this.pnlDatos.Controls.Add(this.lblLastNameCoordinator);
-            this.pnlDatos.Controls.Add(this.txtFirstNameCoordinator);
-            this.pnlDatos.Controls.Add(this.lblName);
-            this.pnlDatos.Controls.Add(this.txtId);
-            this.pnlDatos.Controls.Add(this.lblId);
-            this.pnlDatos.Controls.Add(this.pctPhotoCoordinator);
-            this.pnlDatos.HorizontalScrollbarBarColor = true;
-            this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 10;
-            this.pnlDatos.Location = new System.Drawing.Point(477, 63);
-            this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(547, 230);
-            this.pnlDatos.TabIndex = 11;
-            this.pnlDatos.VerticalScrollbarBarColor = true;
-            this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 10;
+            this.pnlDatosCoordinator.Controls.Add(this.txtDescripcionCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.lblDescripcionCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.btnSearch);
+            this.pnlDatosCoordinator.Controls.Add(this.txtEmailCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.metroLabel5);
+            this.pnlDatosCoordinator.Controls.Add(this.txtCellPhoneNumberCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.metroLabel4);
+            this.pnlDatosCoordinator.Controls.Add(this.txtLastNameCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.lblLastNameCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.txtFirstNameCoordinator);
+            this.pnlDatosCoordinator.Controls.Add(this.lblName);
+            this.pnlDatosCoordinator.Controls.Add(this.txtId);
+            this.pnlDatosCoordinator.Controls.Add(this.lblId);
+            this.pnlDatosCoordinator.Controls.Add(this.pctPhotoCoordinator);
+            this.pnlDatosCoordinator.HorizontalScrollbarBarColor = true;
+            this.pnlDatosCoordinator.HorizontalScrollbarHighlightOnWheel = false;
+            this.pnlDatosCoordinator.HorizontalScrollbarSize = 10;
+            this.pnlDatosCoordinator.Location = new System.Drawing.Point(477, 63);
+            this.pnlDatosCoordinator.Name = "pnlDatosCoordinator";
+            this.pnlDatosCoordinator.Size = new System.Drawing.Size(547, 230);
+            this.pnlDatosCoordinator.TabIndex = 11;
+            this.pnlDatosCoordinator.VerticalScrollbarBarColor = true;
+            this.pnlDatosCoordinator.VerticalScrollbarHighlightOnWheel = false;
+            this.pnlDatosCoordinator.VerticalScrollbarSize = 10;
             // 
             // txtDescripcionCoordinator
             // 
@@ -502,27 +502,27 @@ namespace Proyecto_final
             this.pctPhotoCoordinator.Size = new System.Drawing.Size(126, 138);
             this.pctPhotoCoordinator.TabIndex = 3;
             this.pctPhotoCoordinator.TabStop = false;
-            this.pctPhotoCoordinator.Click += new System.EventHandler(this.pctPhoto_Click);
+            this.pctPhotoCoordinator.Click += new System.EventHandler(this.pctPhotoCoordinator_Click);
             // 
             // FrmCoordinator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 362);
-            this.Controls.Add(this.grdDatos);
+            this.Controls.Add(this.grdDatosCoordinator);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.pnlDatos);
+            this.Controls.Add(this.pnlDatosCoordinator);
             this.Name = "FrmCoordinator";
             this.Text = "Coordinators";
             this.Load += new System.EventHandler(this.FrmCoordinator_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosCoordinator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coordinatorBindingSource)).EndInit();
-            this.pnlDatos.ResumeLayout(false);
-            this.pnlDatos.PerformLayout();
+            this.pnlDatosCoordinator.ResumeLayout(false);
+            this.pnlDatosCoordinator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctPhotoCoordinator)).EndInit();
             this.ResumeLayout(false);
 
@@ -530,13 +530,13 @@ namespace Proyecto_final
 
         #endregion
 
-        private MetroFramework.Controls.MetroGrid grdDatos;
+        private MetroFramework.Controls.MetroGrid grdDatosCoordinator;
         private MetroFramework.Controls.MetroButton btnSave;
         private MetroFramework.Controls.MetroButton btnCancel;
         private MetroFramework.Controls.MetroButton btnDelete;
         private MetroFramework.Controls.MetroButton btnEdit;
         private MetroFramework.Controls.MetroButton btnAdd;
-        private MetroFramework.Controls.MetroPanel pnlDatos;
+        private MetroFramework.Controls.MetroPanel pnlDatosCoordinator;
         private MetroFramework.Controls.MetroButton btnSearch;
         private MetroFramework.Controls.MetroTextBox txtEmailCoordinator;
         private MetroFramework.Controls.MetroLabel metroLabel5;

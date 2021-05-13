@@ -31,9 +31,11 @@ namespace Proyecto_final
                 if (student != null)
                 {
                     if (dataContext.Entry<Student>(student).State == EntityState.Detached)
-                        dataContext.Set<Student>().Attach(student);
+                    dataContext.Set<Student>().Attach(student);
                     if (student.Id == 0)
+                    {
                         dataContext.Entry<Student>(student).State = EntityState.Added;
+                    }
                     else
                         dataContext.Entry<Student>(student).State = EntityState.Modified;
                     dataContext.SaveChanges();
