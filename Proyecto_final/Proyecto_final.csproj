@@ -125,7 +125,6 @@
     <Compile Include="FrmStudent.Designer.cs">
       <DependentUpon>FrmStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="MetroFremwork\Forms.cs" />
     <Compile Include="Migrations\202105060228279_Inicio.cs" />
     <Compile Include="Migrations\202105060228279_Inicio.designer.cs">
       <DependentUpon>202105060228279_Inicio.cs</DependentUpon>

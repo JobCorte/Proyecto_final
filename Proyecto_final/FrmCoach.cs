@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Proyecto_final
 {
-    public partial class FrmCoach : Form
+    public partial class FrmCoach : MetroFramework.Forms.MetroForm
     {
         public FrmCoach()
         {
