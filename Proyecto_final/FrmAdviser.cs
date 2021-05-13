@@ -115,7 +115,7 @@ namespace Proyecto_final
             using (OpenFileDialog ofd = new OpenFileDialog()
             {
                 Filter = "archivos JPG|*.jpg|todos los archivos|*.*"
-            })
+            }     )
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
@@ -126,16 +126,6 @@ namespace Proyecto_final
                 }
 
             }
-        }
-
-        private void pctPhoto_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grdAdviser_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
