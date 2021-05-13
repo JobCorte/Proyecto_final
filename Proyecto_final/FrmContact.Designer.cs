@@ -34,6 +34,15 @@ namespace Proyecto_final
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatosContact = new MetroFramework.Controls.MetroGrid();
+            this.idContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullnameContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cellphoneContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.photoContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDatosContact = new MetroFramework.Controls.MetroPanel();
             this.btnSearch = new MetroFramework.Controls.MetroButton();
@@ -57,15 +66,6 @@ namespace Proyecto_final
             this.btnDelete = new MetroFramework.Controls.MetroButton();
             this.btnCancel = new MetroFramework.Controls.MetroButton();
             this.btnSave = new MetroFramework.Controls.MetroButton();
-            this.idContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullnameContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cellphoneContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photoContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departmentContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactBindingSource)).BeginInit();
             this.pnlDatosContact.SuspendLayout();
@@ -128,6 +128,61 @@ namespace Proyecto_final
             this.grdDatosContact.TabIndex = 0;
             this.grdDatosContact.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosContact_CellContentClick);
             // 
+            // idContactDataGridViewTextBoxColumn
+            // 
+            this.idContactDataGridViewTextBoxColumn.DataPropertyName = "IdContact";
+            this.idContactDataGridViewTextBoxColumn.HeaderText = "IdContact";
+            this.idContactDataGridViewTextBoxColumn.Name = "idContactDataGridViewTextBoxColumn";
+            // 
+            // fullnameContactDataGridViewTextBoxColumn
+            // 
+            this.fullnameContactDataGridViewTextBoxColumn.DataPropertyName = "FullnameContact";
+            this.fullnameContactDataGridViewTextBoxColumn.HeaderText = "FullnameContact";
+            this.fullnameContactDataGridViewTextBoxColumn.Name = "fullnameContactDataGridViewTextBoxColumn";
+            this.fullnameContactDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameContactDataGridViewTextBoxColumn
+            // 
+            this.firstNameContactDataGridViewTextBoxColumn.DataPropertyName = "FirstNameContact";
+            this.firstNameContactDataGridViewTextBoxColumn.HeaderText = "FirstNameContact";
+            this.firstNameContactDataGridViewTextBoxColumn.Name = "firstNameContactDataGridViewTextBoxColumn";
+            // 
+            // lastNameContactDataGridViewTextBoxColumn
+            // 
+            this.lastNameContactDataGridViewTextBoxColumn.DataPropertyName = "LastNameContact";
+            this.lastNameContactDataGridViewTextBoxColumn.HeaderText = "LastNameContact";
+            this.lastNameContactDataGridViewTextBoxColumn.Name = "lastNameContactDataGridViewTextBoxColumn";
+            // 
+            // phoneNumberContactDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberContactDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumberContact";
+            this.phoneNumberContactDataGridViewTextBoxColumn.HeaderText = "PhoneNumberContact";
+            this.phoneNumberContactDataGridViewTextBoxColumn.Name = "phoneNumberContactDataGridViewTextBoxColumn";
+            // 
+            // cellphoneContactDataGridViewTextBoxColumn
+            // 
+            this.cellphoneContactDataGridViewTextBoxColumn.DataPropertyName = "CellphoneContact";
+            this.cellphoneContactDataGridViewTextBoxColumn.HeaderText = "CellphoneContact";
+            this.cellphoneContactDataGridViewTextBoxColumn.Name = "cellphoneContactDataGridViewTextBoxColumn";
+            // 
+            // photoContactDataGridViewTextBoxColumn
+            // 
+            this.photoContactDataGridViewTextBoxColumn.DataPropertyName = "PhotoContact";
+            this.photoContactDataGridViewTextBoxColumn.HeaderText = "PhotoContact";
+            this.photoContactDataGridViewTextBoxColumn.Name = "photoContactDataGridViewTextBoxColumn";
+            // 
+            // emailContactDataGridViewTextBoxColumn
+            // 
+            this.emailContactDataGridViewTextBoxColumn.DataPropertyName = "EmailContact";
+            this.emailContactDataGridViewTextBoxColumn.HeaderText = "EmailContact";
+            this.emailContactDataGridViewTextBoxColumn.Name = "emailContactDataGridViewTextBoxColumn";
+            // 
+            // departmentContactDataGridViewTextBoxColumn
+            // 
+            this.departmentContactDataGridViewTextBoxColumn.DataPropertyName = "DepartmentContact";
+            this.departmentContactDataGridViewTextBoxColumn.HeaderText = "DepartmentContact";
+            this.departmentContactDataGridViewTextBoxColumn.Name = "departmentContactDataGridViewTextBoxColumn";
+            // 
             // contactBindingSource
             // 
             this.contactBindingSource.DataSource = typeof(Proyecto_final.Entidades.Contact);
@@ -185,6 +240,7 @@ namespace Proyecto_final
             this.txtDepartmentContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtDepartmentContact.CustomButton.UseSelectable = true;
             this.txtDepartmentContact.CustomButton.Visible = false;
+            this.txtDepartmentContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "DepartmentContact", true));
             this.txtDepartmentContact.Lines = new string[0];
             this.txtDepartmentContact.Location = new System.Drawing.Point(283, 193);
             this.txtDepartmentContact.MaxLength = 32767;
@@ -215,6 +271,7 @@ namespace Proyecto_final
             this.txtEmailContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmailContact.CustomButton.UseSelectable = true;
             this.txtEmailContact.CustomButton.Visible = false;
+            this.txtEmailContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "EmailContact", true));
             this.txtEmailContact.Lines = new string[0];
             this.txtEmailContact.Location = new System.Drawing.Point(283, 165);
             this.txtEmailContact.MaxLength = 32767;
@@ -245,6 +302,7 @@ namespace Proyecto_final
             this.txtCellphoneContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCellphoneContact.CustomButton.UseSelectable = true;
             this.txtCellphoneContact.CustomButton.Visible = false;
+            this.txtCellphoneContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "CellphoneContact", true));
             this.txtCellphoneContact.Lines = new string[0];
             this.txtCellphoneContact.Location = new System.Drawing.Point(283, 135);
             this.txtCellphoneContact.MaxLength = 32767;
@@ -275,6 +333,7 @@ namespace Proyecto_final
             this.txtPhoneNumberContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPhoneNumberContact.CustomButton.UseSelectable = true;
             this.txtPhoneNumberContact.CustomButton.Visible = false;
+            this.txtPhoneNumberContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "PhoneNumberContact", true));
             this.txtPhoneNumberContact.Lines = new string[0];
             this.txtPhoneNumberContact.Location = new System.Drawing.Point(283, 101);
             this.txtPhoneNumberContact.MaxLength = 32767;
@@ -305,6 +364,7 @@ namespace Proyecto_final
             this.txtLastNameContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLastNameContact.CustomButton.UseSelectable = true;
             this.txtLastNameContact.CustomButton.Visible = false;
+            this.txtLastNameContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "LastNameContact", true));
             this.txtLastNameContact.Lines = new string[0];
             this.txtLastNameContact.Location = new System.Drawing.Point(283, 72);
             this.txtLastNameContact.MaxLength = 32767;
@@ -335,6 +395,7 @@ namespace Proyecto_final
             this.txtFirtsNameContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtFirtsNameContact.CustomButton.UseSelectable = true;
             this.txtFirtsNameContact.CustomButton.Visible = false;
+            this.txtFirtsNameContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "FirstNameContact", true));
             this.txtFirtsNameContact.Lines = new string[0];
             this.txtFirtsNameContact.Location = new System.Drawing.Point(283, 42);
             this.txtFirtsNameContact.MaxLength = 32767;
@@ -365,6 +426,7 @@ namespace Proyecto_final
             this.txtIdContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtIdContact.CustomButton.UseSelectable = true;
             this.txtIdContact.CustomButton.Visible = false;
+            this.txtIdContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactBindingSource, "IdContact", true));
             this.txtIdContact.Lines = new string[0];
             this.txtIdContact.Location = new System.Drawing.Point(283, 13);
             this.txtIdContact.MaxLength = 32767;
@@ -501,61 +563,6 @@ namespace Proyecto_final
             this.btnSave.Text = "Save";
             this.btnSave.UseSelectable = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // idContactDataGridViewTextBoxColumn
-            // 
-            this.idContactDataGridViewTextBoxColumn.DataPropertyName = "IdContact";
-            this.idContactDataGridViewTextBoxColumn.HeaderText = "IdContact";
-            this.idContactDataGridViewTextBoxColumn.Name = "idContactDataGridViewTextBoxColumn";
-            // 
-            // fullnameContactDataGridViewTextBoxColumn
-            // 
-            this.fullnameContactDataGridViewTextBoxColumn.DataPropertyName = "FullnameContact";
-            this.fullnameContactDataGridViewTextBoxColumn.HeaderText = "FullnameContact";
-            this.fullnameContactDataGridViewTextBoxColumn.Name = "fullnameContactDataGridViewTextBoxColumn";
-            this.fullnameContactDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // firstNameContactDataGridViewTextBoxColumn
-            // 
-            this.firstNameContactDataGridViewTextBoxColumn.DataPropertyName = "FirstNameContact";
-            this.firstNameContactDataGridViewTextBoxColumn.HeaderText = "FirstNameContact";
-            this.firstNameContactDataGridViewTextBoxColumn.Name = "firstNameContactDataGridViewTextBoxColumn";
-            // 
-            // lastNameContactDataGridViewTextBoxColumn
-            // 
-            this.lastNameContactDataGridViewTextBoxColumn.DataPropertyName = "LastNameContact";
-            this.lastNameContactDataGridViewTextBoxColumn.HeaderText = "LastNameContact";
-            this.lastNameContactDataGridViewTextBoxColumn.Name = "lastNameContactDataGridViewTextBoxColumn";
-            // 
-            // phoneNumberContactDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberContactDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumberContact";
-            this.phoneNumberContactDataGridViewTextBoxColumn.HeaderText = "PhoneNumberContact";
-            this.phoneNumberContactDataGridViewTextBoxColumn.Name = "phoneNumberContactDataGridViewTextBoxColumn";
-            // 
-            // cellphoneContactDataGridViewTextBoxColumn
-            // 
-            this.cellphoneContactDataGridViewTextBoxColumn.DataPropertyName = "CellphoneContact";
-            this.cellphoneContactDataGridViewTextBoxColumn.HeaderText = "CellphoneContact";
-            this.cellphoneContactDataGridViewTextBoxColumn.Name = "cellphoneContactDataGridViewTextBoxColumn";
-            // 
-            // photoContactDataGridViewTextBoxColumn
-            // 
-            this.photoContactDataGridViewTextBoxColumn.DataPropertyName = "PhotoContact";
-            this.photoContactDataGridViewTextBoxColumn.HeaderText = "PhotoContact";
-            this.photoContactDataGridViewTextBoxColumn.Name = "photoContactDataGridViewTextBoxColumn";
-            // 
-            // emailContactDataGridViewTextBoxColumn
-            // 
-            this.emailContactDataGridViewTextBoxColumn.DataPropertyName = "EmailContact";
-            this.emailContactDataGridViewTextBoxColumn.HeaderText = "EmailContact";
-            this.emailContactDataGridViewTextBoxColumn.Name = "emailContactDataGridViewTextBoxColumn";
-            // 
-            // departmentContactDataGridViewTextBoxColumn
-            // 
-            this.departmentContactDataGridViewTextBoxColumn.DataPropertyName = "DepartmentContact";
-            this.departmentContactDataGridViewTextBoxColumn.HeaderText = "DepartmentContact";
-            this.departmentContactDataGridViewTextBoxColumn.Name = "departmentContactDataGridViewTextBoxColumn";
             // 
             // FrmContact
             // 

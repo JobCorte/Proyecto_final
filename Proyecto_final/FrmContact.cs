@@ -21,7 +21,18 @@ namespace Proyecto_final
 
         private void FrmContact_Load(object sender, EventArgs e)
         {
+            using (DataContext dataContext = new DataContext())
 
+            {
+                contactBindingSource.DataSource = dataContext.Contacts.ToList();
+            }
+
+            pnlDatosContact.Enabled = false;
+            Contact contact = contactBindingSource.Current as Contact;
+            if (contact != null && contact.PhotoContact != null)
+                pctPhotoContact.Image = Image.FromFile(contact.PhotoContact);
+            else
+                pctPhotoContact.Image = null;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

@@ -19,7 +19,7 @@ namespace Proyecto_final
             using (DataContext dataContext = new DataContext())
 
             {
-                coordinatorBindingSource.DataSource = dataContext.Coordinator.ToList();
+                coordinatorBindingSource.DataSource = dataContext.Coordinators.ToList();
             }
 
             pnlDatosCoordinator.Enabled = false;

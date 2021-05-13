@@ -231,6 +231,7 @@ namespace Proyecto_final
             this.txtEmailCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmailCompany.CustomButton.UseSelectable = true;
             this.txtEmailCompany.CustomButton.Visible = false;
+            this.txtEmailCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "EmailCompany", true));
             this.txtEmailCompany.Lines = new string[0];
             this.txtEmailCompany.Location = new System.Drawing.Point(290, 183);
             this.txtEmailCompany.MaxLength = 32767;
@@ -261,6 +262,7 @@ namespace Proyecto_final
             this.txtWebSiteCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtWebSiteCompany.CustomButton.UseSelectable = true;
             this.txtWebSiteCompany.CustomButton.Visible = false;
+            this.txtWebSiteCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "WebSiteCompany", true));
             this.txtWebSiteCompany.Lines = new string[0];
             this.txtWebSiteCompany.Location = new System.Drawing.Point(290, 154);
             this.txtWebSiteCompany.MaxLength = 32767;
@@ -291,6 +293,7 @@ namespace Proyecto_final
             this.txtPhoneNumberCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPhoneNumberCompany.CustomButton.UseSelectable = true;
             this.txtPhoneNumberCompany.CustomButton.Visible = false;
+            this.txtPhoneNumberCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "PhoneNumberCompany", true));
             this.txtPhoneNumberCompany.Lines = new string[0];
             this.txtPhoneNumberCompany.Location = new System.Drawing.Point(290, 125);
             this.txtPhoneNumberCompany.MaxLength = 32767;
@@ -321,6 +324,7 @@ namespace Proyecto_final
             this.txtPostalCodeCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPostalCodeCompany.CustomButton.UseSelectable = true;
             this.txtPostalCodeCompany.CustomButton.Visible = false;
+            this.txtPostalCodeCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "PostalCodeCompany", true));
             this.txtPostalCodeCompany.Lines = new string[0];
             this.txtPostalCodeCompany.Location = new System.Drawing.Point(290, 96);
             this.txtPostalCodeCompany.MaxLength = 32767;
@@ -351,6 +355,7 @@ namespace Proyecto_final
             this.txtAdressCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtAdressCompany.CustomButton.UseSelectable = true;
             this.txtAdressCompany.CustomButton.Visible = false;
+            this.txtAdressCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "AdressCompany", true));
             this.txtAdressCompany.Lines = new string[0];
             this.txtAdressCompany.Location = new System.Drawing.Point(290, 67);
             this.txtAdressCompany.MaxLength = 32767;
@@ -381,6 +386,7 @@ namespace Proyecto_final
             this.txtNameCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNameCompany.CustomButton.UseSelectable = true;
             this.txtNameCompany.CustomButton.Visible = false;
+            this.txtNameCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "NameCompany", true));
             this.txtNameCompany.Lines = new string[0];
             this.txtNameCompany.Location = new System.Drawing.Point(290, 38);
             this.txtNameCompany.MaxLength = 32767;
@@ -411,6 +417,7 @@ namespace Proyecto_final
             this.txtIdCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtIdCompany.CustomButton.UseSelectable = true;
             this.txtIdCompany.CustomButton.Visible = false;
+            this.txtIdCompany.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "IdCompany", true));
             this.txtIdCompany.Lines = new string[0];
             this.txtIdCompany.Location = new System.Drawing.Point(290, 9);
             this.txtIdCompany.MaxLength = 32767;

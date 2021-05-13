@@ -21,7 +21,18 @@ namespace Proyecto_final
 
         private void FrmCompany_Load(object sender, EventArgs e)
         {
+            using (DataContext dataContext = new DataContext())
 
+            {
+                companyBindingSource.DataSource = dataContext.Companies.ToList();
+            }
+
+            pnlDatosCompany.Enabled = false;
+            Company company = companyBindingSource.Current as Company;
+            if (company != null && company.PhotoCompany != null)
+                pctPhotoCompany.Image = Image.FromFile(company.PhotoCompany);
+            else
+                pctPhotoCompany.Image = null;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

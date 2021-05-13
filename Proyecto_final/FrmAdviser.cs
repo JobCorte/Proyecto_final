@@ -132,5 +132,10 @@ namespace Proyecto_final
         {
 
         }
+
+        private void grdAdviser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

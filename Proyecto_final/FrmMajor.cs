@@ -24,7 +24,7 @@ namespace Proyecto_final
             using (DataContext dataContext = new DataContext())
 
             {
-                majorBindingSource.DataSource = dataContext.Major.ToList();
+                majorBindingSource.DataSource = dataContext.Majors.ToList();
             }
 
             pnlDatosMajor.Enabled = false;
