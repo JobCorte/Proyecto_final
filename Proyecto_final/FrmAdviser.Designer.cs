@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Windows.Forms;
+
 namespace Proyecto_final
 {
     partial class FrmAdviser
@@ -533,6 +536,16 @@ namespace Proyecto_final
             ((System.ComponentModel.ISupportInitialize)(this.fontResolverBindingSource)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void grdAdviser_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pctPhoto_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
