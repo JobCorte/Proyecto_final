@@ -14,7 +14,7 @@ namespace Proyecto_final
 {
     public partial class FrmCoach : MetroFramework.Forms.MetroForm
     {
-        private object adviserBindingSource;
+        private object coachBindingSource;
 
         public FrmCoach()
         {
@@ -25,10 +25,10 @@ namespace Proyecto_final
         {
             using (DataContext dataContext = new DataContext())
             {
-                adviserBindingSource.DataSource = dataContext.Coaches.ToList();
+                coachBindingSource.DataSource = dataContext.Coaches.ToList();
             }
             pnlDatos.Enabled = false;
-            Coach coach = adviserBindingSource.Current as Coach;
+            Coach coach = coachBindingSource.Current as Coach;
             if (coach != null && coach.Photo != null)
                 pctPhoto.Image = Image.FromFile(coach.Photo);
             else
@@ -38,8 +38,8 @@ namespace Proyecto_final
         {
             pnlDatos.Enabled = true;
             pctPhoto.Image = null;
-            adviserBindingSource.Add(new Coach());
-            adviserBindingSource.MoveLast();
+            coachBindingSource.Add(new Coach());
+            coachBindingSource.MoveLast();
             txtFirstName.Focus();
         }
 
@@ -47,7 +47,7 @@ namespace Proyecto_final
         {
             pnlDatos.Enabled = true;
             txtFirstName.Focus();
-            Coach Coach = adviserBindingSource.Current as Coach;
+            Coach Coach = coachBindingSource.Current as Coach;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace Proyecto_final
             {
                 using (DataContext dataContext = new DataContext())
                 {
-                    Coach coach = adviserBindingSource.Current as Coach;
+                    Coach coach = coachBindingSource.Current as Coach;
                     if (coach != null)
                     {
                         if (dataContext.Entry<Coach>(coach).State == EntityState.Detached)
@@ -64,7 +64,7 @@ namespace Proyecto_final
                         dataContext.Entry<Coach>(coach).State = EntityState.Deleted;
                         dataContext.SaveChanges();
                         MetroFramework.MetroMessageBox.Show(this, "Asesor eliminado");
-                        adviserBindingSource.RemoveCurrent();
+                        coachBindingSource.RemoveCurrent();
                         pctPhoto.Image = null;
                         pnlDatos.Enabled = false;
 
@@ -76,7 +76,7 @@ namespace Proyecto_final
         private void btnCancel_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
-            adviserBindingSource.ResetBindings(false);
+            coachBindingSource.ResetBindings(false);
             FrmCoach_Load(sender, e);
         }
 
@@ -84,7 +84,7 @@ namespace Proyecto_final
         {
             using (DataContext dataContext = new DataContext())
             {
-                Coach coach = adviserBindingSource.Current as Coach;
+                Coach coach = coachBindingSource.Current as Coach;
                 if (coach != null)
                 {
                     if (dataContext.Entry<Coach>(coach).State == EntityState.Detached)
@@ -112,7 +112,7 @@ namespace Proyecto_final
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     pctPhoto.Image = Image.FromFile(ofd.FileName);
-                    Coach coach = adviserBindingSource.Current as Coach;
+                    Coach coach = coachBindingSource.Current as Coach;
                     if (coach != null)
                         coach.Photo = ofd.FileName;
                 }

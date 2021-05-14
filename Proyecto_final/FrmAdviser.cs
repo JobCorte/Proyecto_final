@@ -15,7 +15,7 @@ namespace Proyecto_final
 {
     public partial class FrmAdviser : MetroFramework.Forms.MetroForm
     {
-        private object adviserBindingSource;
+        private object BindingSource2;
 
         public FrmAdviser()
         {
@@ -26,10 +26,10 @@ namespace Proyecto_final
         {
             using (DataContext dataContext = new DataContext())
             {
-                adviserBindingSource.DataSource = dataContext.Advisers.ToList();
+                bindingSource2.DataSource = dataContext.Advisers.ToList();
             }
             pnlDatos.Enabled = false;
-            Adviser adviser = adviserBindingSource.Current as Adviser;
+            Adviser adviser = bindingSource2.Current as Adviser;
             if (adviser != null && adviser.Photo != null)
                 pctPhoto.Image = Image.FromFile(adviser.Photo);
             else
@@ -40,8 +40,8 @@ namespace Proyecto_final
         {
             pnlDatos.Enabled = true;
             pctPhoto.Image = null;
-            adviserBindingSource.Add(new Adviser());
-            adviserBindingSource.MoveLast();
+            bindingSource2.Add(new Adviser());
+            bindingSource2.MoveLast();
             txtFirstName.Focus();
         }
 
@@ -49,7 +49,7 @@ namespace Proyecto_final
         {
             pnlDatos.Enabled = true;
             txtFirstName.Focus();
-            Adviser adviser = adviserBindingSource.Current as Adviser;
+            Adviser adviser = bindingSource2.Current as Adviser;
 
         }
 
@@ -59,7 +59,7 @@ namespace Proyecto_final
             {
                 using (DataContext dataContext = new DataContext())
                 {
-                    Adviser adviser = adviserBindingSource.Current as Adviser;
+                    Adviser adviser = bindingSource2.Current as Adviser;
                     if (adviser != null)
                     {
                         if (dataContext.Entry<Adviser>(adviser).State == EntityState.Detached)
@@ -67,7 +67,7 @@ namespace Proyecto_final
                         dataContext.Entry<Adviser>(adviser).State = EntityState.Deleted;
                         dataContext.SaveChanges();
                         MetroFramework.MetroMessageBox.Show(this, "Asesor eliminado");
-                        adviserBindingSource.RemoveCurrent();
+                        bindingSource2.RemoveCurrent();
                         pctPhoto.Image = null;
                         pnlDatos.Enabled = false;
 
@@ -79,7 +79,7 @@ namespace Proyecto_final
         private void btnCancel_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
-            adviserBindingSource.ResetBindings(false);
+            bindingSource2.ResetBindings(false);
             frmAdvisers_Load(sender, e);
         }
 
@@ -92,7 +92,7 @@ namespace Proyecto_final
         {
             using (DataContext dataContext = new DataContext())
             {
-                Adviser adviser = adviserBindingSource.Current as Adviser;
+                Adviser adviser = bindingSource2.Current as Adviser;
                 if (adviser != null)
                 {
                     if (dataContext.Entry<Adviser>(adviser).State == EntityState.Detached)
@@ -120,7 +120,7 @@ namespace Proyecto_final
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     pctPhoto.Image = Image.FromFile(ofd.FileName);
-                    Adviser adviser = adviserBindingSource.Current as Adviser;
+                    Adviser adviser = bindingSource2.Current as Adviser;
                     if (adviser != null)
                         adviser.Photo = ofd.FileName;
                 }
