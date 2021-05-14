@@ -272,6 +272,7 @@
     <None Include="Properties\DataSources\MetroFramework.MetroMessageBoxProperties.datasource" />
     <None Include="Properties\DataSources\MetroFramework.MetroPens.datasource" />
     <None Include="Properties\DataSources\MetroFramework.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Proyecto_final.Entidades.Adviser.datasource" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Company.datasource" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Contact.datasource" />
     <None Include="Properties\DataSources\Proyecto_final.Entidades.Coordinator.datasource" />
